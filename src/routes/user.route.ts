@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { Request, Response } from 'express';
 
 const router = Router();
 
@@ -7,7 +8,7 @@ const users = [
   { id: 2, name: 'Jane Doe' },
 ];
 
-router.get('/', (_req, res) => {
+router.get('/', (_req:Request, res:Response) => {
   res.json(users);
 });
 
