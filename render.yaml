@@ -4,9 +4,8 @@ services:
     runtime: node
     region: singapore
     plan: free
-    rootDir: .
     buildCommand: npm install && npm run build
-    startCommand: node index.js
+    startCommand: npm start
     envVars:
       - key: PORT
         value: 10000
